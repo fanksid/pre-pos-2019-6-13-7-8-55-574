@@ -8,10 +8,7 @@ function countSameElements(collection) {
     if (map.has(element)) {
       map.get(element).count += 1;
     } else {
-      map.set(element, {
-        key: element,
-        count: 1
-      });
+      map.set(element, { key: element, count: 1 });
     }
   });
 
